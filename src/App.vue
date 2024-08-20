@@ -1,7 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 
-window.bliskSocket.private("user." + 1).listen(".order", (order) => {
+window.bliskSocket.join("user").listen(".order", (order) => {
   console.log("ORDER FROM SOCKET", order)
 })
 </script>
