@@ -6,7 +6,7 @@ import Echo from "laravel-echo";
 
 window.Echo = Echo
 window.Pusher = Pusher;
-// Echo.connector.pusher.config.
+
 window.bliskSocket = new Echo({
   broadcaster: "pusher",
   key: "b.e.e.s.m.a.r.t",
@@ -17,7 +17,6 @@ window.bliskSocket = new Echo({
   disableStats: true,
   authEndpoint: "https://1c37-78-154-187-7.ngrok-free.app/broadcasting/auth"
 });
-window.bliskSocket
 
 
 
